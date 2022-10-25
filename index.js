@@ -98,7 +98,28 @@ console.log(favMovies)
 // Where is Waldo
 ////////////////////////////////
 
+const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+                    ["Lucinda", "Jacc", "Neff", "Snoop"],
+                    ["Petunia", ["Baked Goods", "Waldo"]]];
 
+console.log(whereIsWaldo)
+
+whereIsWaldo.splice((whereIsWaldo.indexOf('Eggbert')),1)
+console.log(whereIsWaldo)
+// whereisWaldo.forEach(item) => {
+//     //check if the type is string or object (array)
+//     if (typeof item === "string"){
+
+//     }
+for(people of whereIsWaldo) {
+    if(typeofpeople != 'string') {
+        if(people.includes("Neff")) {
+            people.splice(people.indexOf("Neff"), 1)
+        }
+    }
+}
+
+// how to access an array within an array. If we know our array only has strings and arrays, we can use  forEach(item)
 ////////////////////////////////
 //  Excited Kitten
 ////////////////////////////////
