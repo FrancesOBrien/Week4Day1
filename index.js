@@ -66,7 +66,14 @@ console.log(wolfy)
 // Yell at the Ninja Turtles
 ////////////////////////////////
 
+let turtles = ["Donatello", "Leonardo", "Michaelangelo", "Raphael"]
 
+const callTurtles = () => {
+    for (const element of turtles) {
+        console.log(element.toUpperCase())
+    }
+}
+callTurtles()
 ////////////////////////////////
 // Methods, Revisited
 ////////////////////////////////
