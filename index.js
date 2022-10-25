@@ -78,6 +78,21 @@ callTurtles()
 // Methods, Revisited
 ////////////////////////////////
 
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+
+console.log(favMovies.indexOf('Titanic'))
+
+console.log(favMovies.sort()) // this sorted the list alphabetically. I beleive sort mutates the array permanently.
+
+favMovies.pop() // removed the last element of the array
+favMovies.push('Guardians of the Galaxy') //added this element to the end of the array
+favMovies.reverse() // reversed the order of the array
+favMovies.shift() // removed the first element of the (now reversed) array
+favMovies.unshift('Aliens') // added a new element to the start of the array
+favMovies.splice(favMovies.indexOf('Django Unchained'), 1, 'Avatar')
+
+console.log(favMovies)
+
 
 ////////////////////////////////
 // Where is Waldo
